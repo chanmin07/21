@@ -1,0 +1,74 @@
+abstract class Vehicle{
+    String name;
+    int hum; //인원
+    int box; //물건
+
+    Transport(String name, int hum){
+        this.name = name;
+        this.hum = hum;
+        System.out.println("현재 탑승객 : " + hum);
+    }
+}
+class Bus extends Vehicle{
+    void ride(){
+        hum += hum;
+        if(hum < 60){
+            System.out.println("버스에 승객이 탓습니다");
+        }
+        else {
+            System.out.println("버스가 만원입니다");
+        }
+    }
+    void out(){
+        hum -= hum;
+        if(hum <= 0){
+            System.out.println("버스에 남은 승객이 없습니다");
+        }
+        else {
+            System.out.println("버스가 버스에서 승객이 내립니다");
+        }
+    }
+    void move(){
+        System.out.println("버스가 출발합니다");
+    }
+    void stop(){
+        System.out.println("버스가 멈춥니다");
+    }
+}
+class Truck extends Vehicle{
+    void take_out(){
+        box += box;
+        if(hum < 8){
+            System.out.println("트럭에 짐을 싣습니다");
+        }
+        else {
+            System.out.println("트럭에 남은 공간이 없습니다");
+        }
+    }
+    void get_out(){
+        box -= box;
+        if(hum <= 0){
+            System.out.println("트럭에 남은 짐이 없습니다");
+        }
+        else {
+            System.out.println("트럭에서 짐을 내립니다");
+        }
+    }
+} 
+//class Ship extends Vehicle{}
+
+public class ch6_assignment {
+    public static void main(String[] args) {
+        Transport[] tp = new Transport[3];
+        tp[0] = new Bus("Bus", 20);
+        //tp[1] = new Truck("Truck", 4);
+        //tp[2] = new Ship("Ship", 200);
+		
+        tp[0].ride(); //버스에 승객이 탓습니다
+        tp[0].ride(); //버스에 승객이 탓습니다
+        tp[0].ride(); //버스가 만원입니다
+        tp[0].move(); //버스가 출발합니다
+        tp[0].stop(); //버스가 멈춥니다
+    }
+}
+//먼가 인터페이스 담당 Transport가 말을 안듣습니다 
