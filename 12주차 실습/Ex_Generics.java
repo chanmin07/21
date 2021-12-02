@@ -71,7 +71,5 @@ public class Ex_Generics {
 //qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 //qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 //qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-//qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-//qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-//qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+
 //qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
