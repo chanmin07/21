@@ -1,6 +1,3 @@
 {
-    "java.project.sourcePaths": [
-        "4주차 실습",
-        "7주차 실습"
-    ]
+    "java.project.sourcePaths": [ "src" ] 
 }

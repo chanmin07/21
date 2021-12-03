@@ -10,7 +10,6 @@ enum MenuList { AMARICANO, LATTE, GREEN_TEA, YUJU_TEA }
 public class Ex_Enum {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 			MenuList m1 = MenuList.AMARICANO;
 			MenuList m2 = MenuList.valueOf("LATTE");
 			MenuList m3 = Enum.valueOf(MenuList.class, "AMARICANO");
